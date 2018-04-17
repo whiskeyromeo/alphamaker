@@ -6,8 +6,12 @@ from timeit import timeit
 
 from alphabetizer import alphabetizer
 
-# Execution of the PY command from index.js
+
 def get_alphabetized_string(parse_string, is_timed):
+    '''
+        Execute the alphabetizer and return a string
+        based on the execution
+    '''
     options = ''
     if is_timed == 'true':
         pyx_version_time = timeit("alphabetizer('{}')".format(
@@ -23,6 +27,7 @@ def main():
     timed = sys.argv[2]
 
     print(get_alphabetized_string(main_string, timed)) 
+    # this may not be necessary when using print
     sys.stdout.flush()
 
 

@@ -12,7 +12,7 @@ const AVAILABLE_TYPES = {
     'py': runPyAlphabetizer
 };
 
-const PY_SOURCE = __dirname + '/simple_cli.py';
+const PY_SOURCE = __dirname + '/main.py';
 
 
 // Set up the cli for execution
@@ -106,7 +106,6 @@ function runJSAlphabetizer(string, timed) {
 function runPyAlphabetizer(string, timed) {
     const pyProcess = spawn('python', [PY_SOURCE, string, timed]);
     pyProcess.stdout.on('data', function (data) {
-        console.log('spawned');
         console.log(data.toString());
     });
     pyProcess.stderr.on('err', (err) => {
