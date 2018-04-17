@@ -13,7 +13,7 @@ Example:
     Output: BcdeiilMn
 ```
 
-## Setup
+## Setup/Use
 
 ### Standalone
 
@@ -21,7 +21,7 @@ So long as you have git, nodejs, and python installed you should be ready to go,
 ```
     git clone https://github.com/whiskeyromeo/alphamaker.git
 ```
-cd into the directory and execute
+cd into the directory, `npm install`, and execute with
 ```
     ./index.js --help
 ```
