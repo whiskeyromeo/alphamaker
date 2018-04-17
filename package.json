@@ -1,0 +1,15 @@
+{
+  "name": "alphamaker",
+  "version": "1.0.4",
+  "description": "A package to alphabetize your strings",
+  "bin": {
+    "alphabetize": "index.js"
+  },
+  "main": "index.js",
+  "author": "Will Russell <whiskeyromeo06@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "cli-input": "^0.2.0",
+    "commander": "^2.15.1"
+  }
+}
