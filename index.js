@@ -49,7 +49,7 @@ function runCLI(type, cmd) {
         console.log(`\n'${type}' is not a valid option\nUse the --help command to discover valid commands\n`);
         return;
     }
-    console.log('Enter the strings to parse: ');
+    console.log('Enter the strings to parse (Enter a blank line if finished with input): ');
     const rl = readline.createInterface({
         input: process.stdin,
         output: process.stdout
